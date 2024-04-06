@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <div id="introduction"><strong> Please fill in this form to reach out to us...</strong></div>
+    <form class="form">
+        <label class="detail" for="full-name">Name <input class="details" type="text" id="full-name" placeholder="Enter your name" required></label>
+        <label class="detail" for="email">Email <input class="details" type="text" id="email" placeholder="Enter your email" required></label>
+        <label class="detail" for="age">Age <input class="details" type="text" id="age" placeholder="Enter your age" required></label>
+        <div class="role">Which option best describes your current role?</div>
+        <label for="feature">
+            <select name="feature" id="feature">
+                <option value="challenges">Select current role</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </label>
+        <div class="recommend">Would you recommend our projects to a friend?</div>
+        <label class="detail" for="recommendation">
+            <input type="radio" id="recommendation" name="recommend">Definitely
+        </label>
+        <br>
+        <label for="recommendation">
+            <input type="radio" id="recommendation" name="recommend">Maybe
+        </label>
+        <br>
+        <label for="recommendation">
+            <input type="radio" id="recommendation" name="recommend">Not Sure
+        </label>
+        <div id="favourite">What is your favourite feature of our website?</div>
+        <label for="improvements" class="improvement">
+            <input type="checkbox" id="improvements"> Front-end Projects <br>
+            <input type="checkbox" id="improvements"> Back-end Projects <br>
+            <input type="checkbox" id="improvements"> Data Visualisation <br>
+            <input type="checkbox" id="improvements"> Challenges <br>
+            <input type="checkbox" id="improvements"> Open Source Community <br>
+            <input type="checkbox" id="improvements"> Gitter Help Rooms <br>
+            <input type="checkbox" id="improvements"> Videos <br>
+            <input type="checkbox" id="improvements"> City Meetups <br>
+            <input type="checkbox" id="improvements"> Wiki <br>
+            <input type="checkbox" id="improvements"> Forum <br>
+            <input type="checkbox" id="improvements"> Additional Courses <br>
+        </label>
+        <div id="comment">Any comments or suggestions?</div>
+        <label for="suggestions"><textarea name="suggestions" id="suggestions" cols="60" rows="7" placeholder="Please help up improve!!"></textarea></label>
+        <label for="submit"><button id="submit" type="submit">Submit</button></label>
+    </form>
+</body>
+</html>
